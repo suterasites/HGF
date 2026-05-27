@@ -869,23 +869,6 @@ p { margin: 0 0 1em; }
   transform: scale(1.05);
   filter: brightness(0.78);
 }
-.gallery__item figcaption {
-  position: absolute;
-  left: 0; right: 0; bottom: 0;
-  padding: 0.85rem 1.05rem;
-  background: linear-gradient(180deg, transparent 0%, rgba(20, 24, 26, .9) 100%);
-  color: var(--cream);
-  font-size: 0.82rem;
-  font-weight: 500;
-  letter-spacing: 0.01em;
-  opacity: 0;
-  transform: translateY(8px);
-  transition: opacity .25s ease, transform .25s ease;
-}
-.gallery__item:hover figcaption {
-  opacity: 1;
-  transform: translateY(0);
-}
 
 /* ---------- About ---------- */
 
@@ -1372,7 +1355,6 @@ body.has-lightbox-open { overflow: hidden; }
   .services-axis { gap: 1rem; }
   .services-hint { width: 100%; text-align: center; }
   .gallery { grid-template-columns: repeat(2, 1fr); gap: 0.7rem; }
-  .gallery__item figcaption { display: none; }
 
   .area-grid { grid-template-columns: 1fr; gap: 1.5rem; }
   .form-row--split { grid-template-columns: 1fr; }
