@@ -714,6 +714,22 @@
   </div>
 </footer>
 
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+  <button class="lightbox__close" type="button" id="lightboxClose" aria-label="Close image viewer">
+    <svg viewBox="0 0 20 20" width="22" height="22" aria-hidden="true"><path d="M4 4l12 12M16 4L4 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  </button>
+  <button class="lightbox__nav lightbox__nav--prev" type="button" id="lightboxPrev" aria-label="Previous image">
+    <svg viewBox="0 0 16 16" width="20" height="20" aria-hidden="true"><path d="M10 2L4 8l6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+  <button class="lightbox__nav lightbox__nav--next" type="button" id="lightboxNext" aria-label="Next image">
+    <svg viewBox="0 0 16 16" width="20" height="20" aria-hidden="true"><path d="M6 2l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+  <figure class="lightbox__figure">
+    <img class="lightbox__img" id="lightboxImg" alt="">
+    <figcaption class="lightbox__caption" id="lightboxCaption"></figcaption>
+  </figure>
+</div>
+
 <script src="script.js"></script>
 </body>
 </html>
