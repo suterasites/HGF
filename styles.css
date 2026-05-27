@@ -581,7 +581,7 @@ p { margin: 0 0 1em; }
 }
 .hero__h1-soft {
   font-family: 'Fraunces', Georgia, 'Times New Roman', serif;
-  color: var(--cedar-sft);
+  color: var(--cream);
   font-style: italic;
   font-weight: 500;
   font-variation-settings: 'opsz' 144;
