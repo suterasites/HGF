@@ -74,13 +74,14 @@
       const list = cards();
       if (!list.length) return;
       const minScroll = list[0].offsetLeft;
-      const maxScroll = list[list.length - 1].offsetLeft;
-      const range = maxScroll - minScroll;
+      const hardMax = track.scrollWidth - track.clientWidth;
+      const lastCardLeft = list[list.length - 1].offsetLeft;
+      const maxScroll = Math.min(lastCardLeft, hardMax);
+      const range = Math.max(0, maxScroll - minScroll);
       const ratio = range > 0
         ? Math.min(1, Math.max(0, (track.scrollLeft - minScroll) / range))
         : 0;
       progress.style.width = (ratio * 100).toFixed(2) + '%';
-      const hardMax = track.scrollWidth - track.clientWidth;
       ctrls.forEach(c => {
         const dir = c.dataset.dir;
         if (dir === 'prev') c.disabled = track.scrollLeft <= minScroll + 2;
