@@ -1289,7 +1289,7 @@ a.contact-direct__row:hover { color: var(--cream); }
   .services-axis { gap: 1rem; }
   .services-hint { width: 100%; text-align: center; }
   .gallery { grid-template-columns: repeat(2, 1fr); gap: 0.7rem; }
-  .gallery__item figcaption { opacity: 1; transform: none; font-size: 0.74rem; padding: 0.6rem 0.75rem; }
+  .gallery__item figcaption { display: none; }
 
   .area-grid { grid-template-columns: 1fr; gap: 1.5rem; }
   .form-row--split { grid-template-columns: 1fr; }
