@@ -576,14 +576,15 @@ p { margin: 0 0 1em; }
   letter-spacing: -0.025em;
   line-height: 1.02;
   margin-bottom: 1.6rem;
+  font-style: italic;
   font-weight: 500;
   font-variation-settings: 'opsz' 144;
 }
 .hero__h1-soft {
   font-family: 'Fraunces', Georgia, 'Times New Roman', serif;
   color: var(--cream);
-  font-style: italic;
-  font-weight: 500;
+  font-style: normal;
+  font-weight: 700;
   font-variation-settings: 'opsz' 144;
 }
 .hero__lede {
